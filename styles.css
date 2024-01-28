@@ -1,0 +1,73 @@
+/* Add styles for the fixed header */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 50px; /* Adjust this value based on your fixed header height */
+}
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Headline Section */
+header {
+    background-color: #ffd3d3; /* Light Pink */
+    padding: 3%;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff; /* White */
+    padding: 3%;
+
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f4f4f4; /* Light Gray */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding: 3%;
+}
+
+/* Portfolio Item */
+.grid-cols-1 > .portfolio-item {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 > .portfolio-item {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-3 > .portfolio-item {
+        width: calc(33.3333% - 1rem);
+    }
+}
+
+/* Contact Section */
+#contact {
+    background-color: #824513; /* Pink */
+    padding: 4px;
+}
+
+#contact a {
+    border: 1px solid #fafafa; /* Black border */
+    padding: 5px 10px;  /*Adjust padding as needed */
+ /* margin-bottom: 10px;  Adjust margin as needed */
+    border-radius: 13%;
+    border-width: 2px;
+}
+
+#contact a:hover {
+    background-color: #fe0000; /* Black background on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark Gray */
+}
+
